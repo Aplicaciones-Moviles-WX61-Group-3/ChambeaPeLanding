@@ -135,4 +135,8 @@ footer p {
     footer .wrapper-footer {
         justify-content: space-around;
     }
+
+    .enterprise {
+        align-items: center;
+    }
 }
