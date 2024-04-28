@@ -36,12 +36,18 @@ body {
     width: 3.75rem;
     height: 3.75rem;
     z-index: 10;
+
+    transition: .25s linear;
 }
 
 #up svg {
     width: inherit;
     height: auto;
     fill: var(--main-primary);
+}
+
+#up:hover {
+    scale: 1.2;
 }
 
 /* Header */
