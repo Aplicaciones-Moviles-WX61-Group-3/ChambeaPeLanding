@@ -568,61 +568,20 @@ header .btn-register:hover {
     }
 }
 
-@media (max-width: 375px) {
-    header {
-        background-color: var(--main-background);
-        width: 100%;
-        height: 5.625rem;
-
-        display: flex;
-
-        justify-content: space-around;
-        align-items: center;
-        flex-flow: row wrap;
-    }
-
-    header ul {
-        display: flex;
-        flex-flow: row;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    header nav a:hover {
-        transition: .25s;
-        border-bottom: 5px var(--main-primary) solid;
-    }
-
-    header button {
-        display: none;
-    }
-
-    header svg {
-        width: 2em;
-        height: 2em;
-        fill: white;
-    }
-
-    header .btn-register {
-        padding: 0.5rem 2rem;
-        margin: 0;
-
-        border-radius: 1rem;
-        color: white;
-        background: var(--main-primary);
-    }
-
+@media (max-width: 425px) {
     .hero img {
         max-width: 12rem;
     }
 
     .wrapper-chambeape h2 {
         width: 20rem;
+        font-size: 1.25rem;
     }
 
     .wrapper-chambeape a {
         width: 15rem;
+        padding: 0.5rem 0rem;
+        font-size: 1rem;
     }
 
     .about .wrapper-about img {
@@ -631,24 +590,32 @@ header .btn-register:hover {
 
     .about .wrapper-about p {
         max-width: 15rem;
+        font-size: 1rem;
+        letter-spacing: 0.0375rem;
+        text-align: center;
     }
 
     .h2 {
+        text-align: center;
         font-size: 2rem;
+        font-style: normal;
+        line-height: normal;
     }
 
     .h2+p {
         width: 15rem;
     }
 
+    .employer .wrapper-employer img {
+        width: 5rem;
+        height: 5rem;
+    }
+
     .employer .wrapper-employer p {
         width: 6.25rem;
         font-size: 1rem;
-    }
-
-    .wrapper-employer img {
-        width: 5rem;
-        height: 5rem;
+        font-weight: 600;
+        letter-spacing: 0.0625rem;
     }
 
     .discover .wrapper-discover .text-discover h3 {
@@ -660,7 +627,76 @@ header .btn-register:hover {
     }
 
     .wrapper-discover img {
+        display: block;
         max-width: 15rem;
         height: 15rem;
+
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero img {
+        max-width: 10rem;
+    }
+
+    .wrapper-chambeape h2 {
+        width: 15rem;
+        font-size: 1rem;
+    }
+
+    .wrapper-chambeape a {
+        padding: 0.5rem 0rem;
+        font-size: 0.875rem;
+    }
+
+    .about .wrapper-about img {
+        max-width: 8rem;
+    }
+
+    .about .wrapper-about p {
+        max-width: 12rem;
+        font-size: 0.875rem;
+        letter-spacing: 0.0375rem;
+        text-align: center;
+    }
+
+    .h2 {
+        text-align: center;
+        font-size: 1.5rem;
+        font-style: normal;
+        line-height: normal;
+    }
+
+    .h2+p {
+        width: 10rem;
+    }
+
+    .employer .wrapper-employer img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .employer .wrapper-employer p {
+        width: 5rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0.0625rem;
+    }
+
+    .discover .wrapper-discover .text-discover h3 {
+        font-size: 1.25rem;
+    }
+
+    .discover .wrapper-discover .text-discover p {
+        font-size: 0.875rem;
+    }
+
+    .wrapper-discover img {
+        display: block;
+        max-width: 10rem;
+        height: 10rem;
+
+        object-fit: cover;
     }
 }
